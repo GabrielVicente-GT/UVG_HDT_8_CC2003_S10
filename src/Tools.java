@@ -7,9 +7,9 @@ public class Tools {
     }
 
     /***
-     *
-     * @param palabra palabra que se cambira por un numero
-     * @return el codigo de la palabra en numero
+     * Metodo para convertir String a numero
+     * @param palabra String a convertir
+     * @return numero valor
      */
     public int StringToNum(String palabra){
         int numero=0;
@@ -33,6 +33,11 @@ public class Tools {
         return numero;
     }
 
+    /***
+     * Convierte el valor de un numero a una letra String
+     * @param palabra numero a convertir
+     * @return Letra que representa
+     */
     public String StringToNum(int palabra){
         if (palabra == 1){
             return "A";

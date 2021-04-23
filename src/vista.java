@@ -1,10 +1,6 @@
-/***************************************************************
-* vista.java
-* Autor: Gabriel Alejandro Vicente Lorenzo
-* Carné: 20498
-* Universidad del Valle de Guatemala
-***************************************************************/
-
+/***
+ * @author Gabriel Alejandro Vicente Lorenzo 20498
+ */
 import java.util.Scanner;
 
 class vista{
@@ -30,7 +26,7 @@ class vista{
 		int opcion=-1;
 		do{
 			System.out.println(" ---> Elija que implementacion");
-			System.out.println("	1.  Priority Queue Java Collection ");
+			System.out.println("	1.  Priority Queue Java Collection Frameworks");
 			System.out.println("	2.  Priority Queue con Heap");
 			System.out.println("	3.  Salir");
 
@@ -52,6 +48,16 @@ class vista{
 		}while(verificador==false);
 		
 			return opcion;
+	}
+	public void titulo(){
+		System.out.println("\n______________________-----------------------------------______________________");
+		System.out.println("______________________--------- Orden Pacientes ------" +
+				"" +
+				"---______________________");
+		System.out.println("______________________-----------------------------------______________________");
+		System.out.println();
+
+		System.out.println("Archivo a leer --> pacientes.txt");
 	}
 
 	

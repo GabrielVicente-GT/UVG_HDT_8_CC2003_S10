@@ -1,23 +1,43 @@
+/***
+ * @author Gabriel Alejandro Vicente Lorenzo 20498
+ * Clase proporcionada en ejemlos de la clase
+ */
 public interface PriorityQueue<E extends Comparable<E>>
 {
+    /***
+     * Regresa el primer nodo
+     * @return firs
+     */
     public E getFirst();
-    // pre: !isEmpty()
-    // post: returns the minimum value in priority queue
 
+    /***
+     * Remueve nodos
+     * @return referencia a nodo
+     */
     public E remove();
-    // pre: !isEmpty()
-    // post: returns and removes minimum value from queue
 
+    /***
+     * Agregar un valor al VectorHeap
+     * @param value valor a agregar
+     */
     public void add(E value);
-    // pre: value is non-null comparable
-    // post: value is added to priority queue
 
+    /***
+     * Verifica si esta vacio el VectorHeap
+     * @return false si contiene elementos, true si esta vacio
+     */
     public boolean isEmpty();
-    // post: returns true iff no elements are in queue
 
+    /***
+     * Regresa el size de VectorHeap
+     * @return size VectorHeap
+     */
     public int size();
-    // post: returns number of elements within queue
 
+    /***
+     *
+     * limpia a vector heap
+     */
     public void clear();
-    // post: removes all elements from queue
+
 }

@@ -2,3 +2,5 @@ Juan Perez, fractura de pierna, C
 Maria Ramirez, apendicitis, A
 Lorenzo Toledo, chingunguya, E
 Carmen Sarmientos, dolores de parto, B
+Gabriel Vicente, COVID-19, A
+Jose Reyes, gripe, E
