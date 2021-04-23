@@ -32,4 +32,18 @@ public class Tools {
         numero = (int) Long.parseLong(etiqueta);
         return numero;
     }
+
+    public String StringToNum(int palabra){
+        if (palabra == 1){
+            return "A";
+        }else if (palabra == 2){
+            return "B";
+        }else if (palabra == 3){
+            return "C";
+        }else if (palabra == 4){
+            return "D";
+        }else{
+            return "E";
+        }
+    }
 }

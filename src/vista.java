@@ -18,12 +18,12 @@ class vista{
      * presionar para continuar
      */
     public void press_enter(){
-        System.out.println("Presione para continuar...");
+        System.out.println("Presione ENTER para el siguiente paciente...");
         scan.nextLine();
     }
 	/***
-	 * menu para elegir idioma
-	 * @return numero seleccionado segun el Idioma
+	 * menu para elegir opcion
+	 * @return numero seleccionado segun la opcion
 	 */
 	public int menu_opcion(){
 		boolean verificador=false;
@@ -32,7 +32,8 @@ class vista{
 			System.out.println(" ---> Elija que implementacion");
 			System.out.println("	1.  Priority Queue Java Collection ");
 			System.out.println("	2.  Priority Queue con Heap");
-			
+			System.out.println("	3.  Salir");
+
 
 			try{
 			
@@ -43,7 +44,7 @@ class vista{
 				System.out.println("ese no es un numero entero");
 			}
 			
-			if(opcion<1||opcion>2){
+			if(opcion<1||opcion>3){
 				System.out.println("esa no es una opcion\n");
 			}else{
 				verificador=true;

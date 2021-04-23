@@ -2,6 +2,7 @@ public class Paciente implements Comparable<Paciente> {
     private String nombre;
     private String enfermedad;
     private int urgencia;
+    Tools herramienta = new Tools();
 
     public Paciente(String nombre,String enfermedad,int urgencia){
         this.nombre = nombre;
@@ -30,10 +31,6 @@ public class Paciente implements Comparable<Paciente> {
 
     @Override
     public String toString() {
-        return "Paciente{" +
-                "nombre='" + nombre + '\'' +
-                ", enfermedad='" + enfermedad + '\'' +
-                ", urgencia=" + urgencia +
-                '}';
+        return "    Paciente" + "   nombre='" + nombre + '\'' + ",  enfermedad='" + enfermedad + '\'' + ",  urgencia=" + herramienta.StringToNum(urgencia) ;
     }
 }
