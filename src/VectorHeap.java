@@ -66,7 +66,7 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E> {
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return data.isEmpty();
     }
 
     @Override
@@ -112,7 +112,7 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E> {
 
     @Override
     public E getFirst() {
-        return null;
+        return data.get(0);
     }
 
     public E remove()
